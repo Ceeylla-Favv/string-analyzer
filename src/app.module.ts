@@ -11,11 +11,11 @@ import { StringEntity } from './strings/entities/string.entity';
     TypeOrmModule.forRootAsync({
       useFactory: () => ({
         type: 'postgres',
-        host: process.env.POSTGRES_HOST || 'db',
-        port: parseInt(process.env.POSTGRES_PORT || '5432', 10),
-        username: process.env.POSTGRES_USER || 'postgres',
-        password: process.env.POSTGRES_PASSWORD || 'postgres',
-        database: process.env.POSTGRES_DB || 'myapp',
+        host: process.env.POSTGRES_HOST || process.env.PGHOST  || 'db',
+        port: parseInt(process.env.POSTGRES_PORT || process.env.PGPORT || '5432', 10),
+        username: process.env.POSTGRES_USER || process.env.PGUSER,
+        password: process.env.POSTGRES_PASSWORD || process.env.PGPASSWORD,
+        database: process.env.POSTGRES_DB || process.env.PGDATABASE,
         entities: [StringEntity],
         synchronize: process.env.NODE_ENV !== 'production',
         logging: true,

@@ -1,6 +1,5 @@
 ## 📘 **README.md — String Analyzer Service (HNG Stage 1)**
 
-```markdown
 # 🧠 String Analyzer Service — HNG Backend Wizards Stage 1
 
 Welcome to my **HNG Stage 1 Backend Task**! 🚀  
@@ -67,9 +66,8 @@ For each analyzed string, the API should:
 ### 🪣 1. Clone Repository
 
 ```bash
-git clone https://github.com//hng-stage1.git
+git clone https://github.com/Ceeylla-Favv/string-analyzer.git
 cd hng-stage1
-````
 
 ---
 
