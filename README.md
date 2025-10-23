@@ -1,5 +1,3 @@
-## 📘 **README.md — String Analyzer Service (HNG Stage 1)**
-
 # 🧠 String Analyzer Service — HNG Backend Wizards Stage 1
 
 Welcome to my **HNG Stage 1 Backend Task**! 🚀  
